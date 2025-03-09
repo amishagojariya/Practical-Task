@@ -1,0 +1,841 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header .btn button {
+    color: white;
+    background-color: #4242ef;
+    border: none;
+    transition: 300ms;
+}
+
+header .btn button:hover {
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue;
+}
+
+
+main {
+    background-image: url('/img/home\ page.jpg');
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.home .head h1 {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 13%;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 47px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.links {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    top: -44px;
+    right: 230px;
+
+}
+
+.links a {
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    color: black;
+    background-color: #858585d5;
+    transition: 300ms;
+}
+
+.links a:hover {
+    background-color: orangered;
+    color: white;
+}
+
+
+
+.Search-flights {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 2%;
+    width: 75%;
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+    border-radius: 13px;
+
+}
+
+.from-to {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.from {
+    width: 350px;
+    padding: 10px 100px 10px 8px;
+    display: flex;
+    border-radius: 12px;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+}
+
+.from .icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.from .icon i {
+    font-size: 28px;
+    height: fit-content;
+    color: orangered;
+    padding: 12px 10px;
+    background-color: rgba(128, 128, 128, 0.601);
+    border-radius: 50%;
+}
+
+.icon p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.icon b {
+    font-size: 22px;
+}
+
+.to {
+    width: 350px;
+    padding: 10px 100px 10px 8px;
+    display: flex;
+    border-radius: 12px;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+}
+
+.to .icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.to .icon i {
+    font-size: 28px;
+    height: fit-content;
+    color: orangered;
+    padding: 12px 10px;
+    background-color: rgba(128, 128, 128, 0.601);
+    border-radius: 50%;
+}
+
+.icon p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.icon b {
+    font-size: 22px;
+}
+
+.down-up {
+    position: absolute;
+    top: 99px;
+    width: 27%;
+    display: flex;
+    justify-content: end;
+}
+
+.down-up .icon {
+
+    background-color: #4242ef;
+    padding: 20px 14px;
+    border-radius: 50%;
+    border: 4px solid rgb(200, 193, 193);
+}
+
+.down-up i {
+    color: white;
+    font-size: 20px;
+
+}
+
+.radio-button {
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.travelers-date {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.date-class {
+    display: flex;
+    gap: 20px;
+}
+
+.Departure-date {
+    width: 300px;
+    padding: 10px 30px 8px 8px;
+    display: flex;
+    border-radius: 12px;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+}
+
+.Departure-date .icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.Departure-date .icon i {
+    font-size: 28px;
+    height: fit-content;
+    color: orangered;
+    padding: 12px 13px;
+    background-color: rgba(128, 128, 128, 0.601);
+    border-radius: 50%;
+}
+
+.icon p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.icon b {
+    font-size: 26px;
+}
+
+.return-date {
+    width: 300px;
+    padding: 10px 30px 10px 8px;
+    display: flex;
+    border-radius: 12px;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+}
+
+.return-date .icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.return-date .icon i {
+    font-size: 28px;
+    height: fit-content;
+    color: orangered;
+    padding: 12px 13px;
+    background-color: rgba(128, 128, 128, 0.601);
+    border-radius: 50%;
+}
+
+.icon p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.icon b {
+    font-size: 26px;
+}
+
+.travelers-class {
+    width: 620px;
+    padding: 17px 30px 16px 8px;
+    display: flex;
+    border-radius: 12px;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+}
+
+.travelers-class .icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.travelers-class .icon span {
+    font-size: 28px;
+    height: fit-content;
+    color: orangered;
+    padding: 12px 13px;
+    background-color: rgba(128, 128, 128, 0.601);
+    border-radius: 50%;
+}
+
+.icon p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.icon b {
+    font-size: 26px;
+}
+
+.search-btn button {
+    position: absolute;
+    right: 35%;
+    bottom: -18px;
+    width: 400px;
+    background-image: linear-gradient(to right, #FF512F, #F09819);
+    /* background-image: linear-gradient(to right, #c7430f,#da5520,#da5520,  #a68416cd); */
+    border: none;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+
+.destinations {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #20242B;
+    margin: 0;
+
+}
+
+.destination-section .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 90px;
+    color: white;
+}
+
+.destination-section .head a {
+    color: orangered;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.destination-container {
+    display: flex;
+    gap: 10px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.destination-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.destination {
+    position: relative;
+    min-width: 300px;
+    border-radius: 10px;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.destination:hover img {
+    transform: scale(1.05);
+}
+
+.destination-highlight {
+    position: relative;
+}
+
+.destination-highlight img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.destination-info {
+    text-align: start;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.offers {
+    padding: 8%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+}
+
+.offers a {
+    color: orangered;
+}
+
+.offers-head {
+    padding: 20px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+}
+
+.offers-head nav {
+    width: 350px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.offers-head nav a {
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    transition: 300ms;
+}
+
+.offers-head nav a:hover {
+    background-color: orangered;
+}
+
+.offer-card {
+    display: flex;
+    text-align: start;
+    align-items: start;
+    gap: 20px;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.offer-card .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.offer-card .img img {
+    border-radius: 10px;
+    height: 130px;
+    width: 130px;
+    background-size: cover;
+}
+
+.card-pera span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cards {
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    gap: 20px;
+}
+
+.cards1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cards2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sights {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.sights-card {
+    height: 300px;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+
+}
+
+.sights-card {
+    color: white;
+    text-align: start;
+}
+
+
+
+.sights-img1 {
+    padding: 10px;
+    background-image: url('/img/Rectangle 41.jpg');
+    background-size: cover;
+}
+
+.sights-img1 h5 {
+    padding-top: 89%;
+}
+
+.sights-img1 p {
+    font-size: 12px;
+}
+
+
+.sights-img2 {
+    padding: 10px;
+    background-image: url('/img/Rectangle\ 43.png');
+    background-size: cover;
+}
+
+.sights-img2 h5 {
+    padding-top: 89%;
+}
+
+.sights-img2 p {
+    font-size: 12px;
+}
+
+
+.sights-img3 {
+    padding: 10px;
+    background-image: url('/img/Rectangle\ 44.png');
+    background-size: cover;
+}
+
+.sights-img3 h5 {
+    padding-top: 89%;
+}
+
+.sights-img3 p {
+    font-size: 12px;
+}
+
+
+.map-locations {
+    padding: 10%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map-head {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 20px;
+}
+
+
+
+.map-head .icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.map-head .icon .line {
+    background-color: white;
+    width: 300px;
+    height: 2px;
+}
+
+.map-head .icon i {
+    position: absolute;
+    right: 4px;
+    top: -18px;
+    color: orangered;
+
+}
+
+.map-img img {
+    width: 100%;
+}
+
+.customers-head {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    align-items: start;
+    color: white;
+    justify-content: space-between;
+}
+
+.customers-head .icon {
+    display: flex;
+
+    align-items: start;
+}
+
+.customers-head .icon img {
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    left: 8.5%;
+}
+
+.customers-say {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.review-card {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.about-customers-say {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    border-radius: 10px;
+    color: white;
+    background-color: orangered;
+    padding: 20px;
+}
+
+.name-review {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-review .icon i {
+    color: yellow;
+}
+
+.updates {
+    margin: 0 auto;
+    width: 80%;
+    padding: 5%;
+}
+
+.updates-img {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+
+.updates-1 {
+    text-align: start;
+    color: white;
+}
+
+.updates-1 p {
+    font-size: 13px;
+}
+
+.updates-1 img {
+    width: 200px;
+}
+
+.gulf {
+    width: 100%;
+    background-color: #252525;
+}
+
+.gulf-travel {
+    width: 80%;
+    margin: 50px auto;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 40px;
+
+    color: white;
+}
+
+.gulf-travel .info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.gulf-travel h4 {
+    color: #76A6FF;
+}
+
+.about-info {
+    width: 70%;
+    margin: 50px auto;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    text-align: start;
+}
+
+.about-info-1 p {
+    width: 90%;
+    font-size: 12px;
+}
+
+.about-info-1 h3 {
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: orangered;
+
+}
+
+.footer-nav {
+    width: 70%;
+    padding: 5%;
+    margin: 0 auto;
+    display: flex;
+    text-align: start;
+    gap: 15%;
+    color: white;
+}
+
+.footer-nav nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.footer-nav nav a {
+    color: white;
+
+}
+
+.policy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs input {
+    background-color: orangered;
+    border: 0px;
+
+}
+
+.inputs input::placeholder {
+    color: rgba(255, 255, 255, 0.525);
+}
+
+.sign-up .line {
+    width: 240px;
+    height: 1px;
+    background-color: white;
+}
+
+.social-link {
+    background-color: black;
+}
+
+.contact-us {
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+   
+}
+
+.contact {
+    display: flex;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 22px;
+}
+
+.copy-right{
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.privacy {
+    display: flex;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.773);
+}
